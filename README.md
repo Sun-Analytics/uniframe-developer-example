@@ -27,6 +27,7 @@ python examples/<EXAMPLE-FILE>.py
 - [create_rt_task.py](./examples/create_rt_task.py): create a real-time string matching task.
 - [launch_rt_task.py](./examples/launch_rt_task.py): launch a real-time string matching task.
 - [rt_searching.py](./examples/rt_searching.py): do real-time string matching search.
+- [delete_dataset_and_task.py](./examples/delete_dataset_and_task.py): delete all datasets and tasks you created. When you create datasetf or tasks, if you get error message like "Name has been used", you can change a dataset or task name, or use this script to clear all the datasets and tasks.
 
 ## More information
 - Please visit our [documentation](https://doc.uniframe.io/) if you want to know what is string matching and other terminology.
