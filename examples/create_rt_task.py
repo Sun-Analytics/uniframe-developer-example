@@ -41,11 +41,11 @@ def create_rt_task(access_token: str, dataset_id: int, rt_task_name: str) -> dic
             },
             "running_parameter": {
                 "TTL_enable": True,
-                "TTL": "P0DT1H0M0S"
+                "TTL": "P0DT0H30M0S"
             },
             "search_option": {
                 "top_n": 1,
-                "threshold": 0.7,
+                "threshold": 0.5,
                 "selected_cols": []
             },
             "algorithm_option": {
@@ -128,7 +128,7 @@ if __name__ == "__main__":
     # step 1
     # login with username and password
     login_res = login(USERNAME, PASSWORD)
-    print(login_res)
+    print("Login with username and password in .env file successful")
 
     # steop 2
     # upload file of dataset

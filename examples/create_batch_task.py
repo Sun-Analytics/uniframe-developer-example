@@ -49,7 +49,7 @@ def create_batch_task(access_token: str, gt_dataset_id: int, nm_dataset_id: int,
             },
             "search_option": {
                 "top_n": 1,
-                "threshold": 0.7,
+                "threshold": 0.5,
                 "selected_cols": []
             },
             "algorithm_option": {
@@ -114,7 +114,7 @@ if __name__ == "__main__":
     # step 1
     # login with username and password
     login_res = login(USERNAME, PASSWORD)
-    print(login_res)
+    print("Login with username and password in .env file successful")
 
     access_token = login_res['access_token']
     # step 2

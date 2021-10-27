@@ -80,7 +80,7 @@ if __name__ == "__main__":
     # step 1
     # login with username and password
     login_res = login(USERNAME, PASSWORD)
-    print(login_res)
+    print("Login with username and password in .env file successful")
 
     # steop 2
     # upload file of dataset

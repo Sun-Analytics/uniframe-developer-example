@@ -52,7 +52,7 @@ if __name__ == "__main__":
     # step 1
     # login with username and password
     login_res = login(USERNAME, PASSWORD)
-    print(login_res)
+    print("Login with username and password in .env file successful")
 
     # steop 2
     # upload file of dataset
@@ -70,10 +70,9 @@ if __name__ == "__main__":
 
     # step 4
     # delete datasets created in examples
-    dataset_id = get_dataset_id(access_token, "my gt dataset")
-    if dataset_id:
-        delete_dataset(access_token, dataset_id)
 
-    dataset_id = get_dataset_id(access_token, "gt dataset")
-    if dataset_id:
-        delete_dataset(access_token, dataset_id)
+    for dataset_name in ["my gt dataset for batch task", "my nm dataset for batch task", "my gt dataset", "gt dataset"]:
+        dataset_id = get_dataset_id(access_token, dataset_name)
+        if dataset_id:
+            delete_dataset(access_token, dataset_id)
+

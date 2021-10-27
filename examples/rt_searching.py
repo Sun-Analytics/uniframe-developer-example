@@ -48,7 +48,7 @@ if __name__ == "__main__":
     # step 1
     # login with username and password
     login_res = login(USERNAME, PASSWORD)
-    print(login_res)
+    print("Login with username and password in .env file successful")
 
     access_token = login_res['access_token']
     # step 2

@@ -76,7 +76,7 @@ if __name__ == "__main__":
     # step 1
     # login with username and password
     login_res = login(USERNAME, PASSWORD)
-    print(login_res)
+    print("Login with username and password in .env file successful")
 
     access_token = login_res['access_token']
 
@@ -92,7 +92,7 @@ if __name__ == "__main__":
     # step 4
     # make sure task is terminated
     task_status: str = 'init'
-    while task_status != 'terminated':
+    while task_status != 'complete':
         time.sleep(1)
         task_status = get_task_status(access_token, task_id)
 

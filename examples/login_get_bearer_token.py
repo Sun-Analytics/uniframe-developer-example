@@ -32,4 +32,4 @@ if __name__ == "__main__":
     # step 1
     # login with email and password
     login_res = login(USERNAME, PASSWORD)
-    print(login_res)
+    print("Login with username and password in .env file successful")
